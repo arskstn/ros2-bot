@@ -1,0 +1,37 @@
+[0.598s] Invoking command in '/home/ars/ros2-bot/src/model': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ars/ros2-bot/src/build/model/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ars/ros2-bot/src/install/model/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/model build --build-base /home/ars/ros2-bot/src/build/model/build install --record /home/ars/ros2-bot/src/build/model/install.log --single-version-externally-managed install_data
+[0.728s] running egg_info
+[0.728s] creating ../build/model/model.egg-info
+[0.736s] writing ../build/model/model.egg-info/PKG-INFO
+[0.736s] writing dependency_links to ../build/model/model.egg-info/dependency_links.txt
+[0.736s] writing requirements to ../build/model/model.egg-info/requires.txt
+[0.736s] writing top-level names to ../build/model/model.egg-info/top_level.txt
+[0.737s] writing manifest file '../build/model/model.egg-info/SOURCES.txt'
+[0.754s] reading manifest file '../build/model/model.egg-info/SOURCES.txt'
+[0.755s] adding license file 'LICENSE'
+[0.755s] writing manifest file '../build/model/model.egg-info/SOURCES.txt'
+[0.755s] running build
+[0.755s] running build_py
+[0.755s] creating /home/ars/ros2-bot/src/build/model/build
+[0.755s] creating /home/ars/ros2-bot/src/build/model/build/lib
+[0.755s] creating /home/ars/ros2-bot/src/build/model/build/lib/model
+[0.755s] copying model/__init__.py -> /home/ars/ros2-bot/src/build/model/build/lib/model
+[0.755s] running install
+[0.758s] running install_lib
+[0.767s] creating /home/ars/ros2-bot/src/install/model/lib/python3.12/site-packages/model
+[0.767s] copying /home/ars/ros2-bot/src/build/model/build/lib/model/__init__.py -> /home/ars/ros2-bot/src/install/model/lib/python3.12/site-packages/model
+[0.768s] byte-compiling /home/ars/ros2-bot/src/install/model/lib/python3.12/site-packages/model/__init__.py to __init__.cpython-312.pyc
+[0.768s] running install_data
+[0.768s] creating /home/ars/ros2-bot/src/install/model/share/ament_index
+[0.768s] creating /home/ars/ros2-bot/src/install/model/share/ament_index/resource_index
+[0.768s] creating /home/ars/ros2-bot/src/install/model/share/ament_index/resource_index/packages
+[0.768s] copying resource/model -> /home/ars/ros2-bot/src/install/model/share/ament_index/resource_index/packages
+[0.768s] copying package.xml -> /home/ars/ros2-bot/src/install/model/share/model
+[0.768s] creating /home/ars/ros2-bot/src/install/model/share/model/launch
+[0.768s] copying launch/gazebo.launch.py -> /home/ars/ros2-bot/src/install/model/share/model/launch
+[0.768s] creating /home/ars/ros2-bot/src/install/model/share/model/resource
+[0.768s] copying resource/model.urdf -> /home/ars/ros2-bot/src/install/model/share/model/resource
+[0.768s] running install_egg_info
+[0.779s] Copying ../build/model/model.egg-info to /home/ars/ros2-bot/src/install/model/lib/python3.12/site-packages/model-0.0.0-py3.12.egg-info
+[0.779s] running install_scripts
+[0.847s] writing list of installed files to '/home/ars/ros2-bot/src/build/model/install.log'
+[0.861s] Invoked command in '/home/ars/ros2-bot/src/model' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ars/ros2-bot/src/build/model/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ars/ros2-bot/src/install/model/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/model build --build-base /home/ars/ros2-bot/src/build/model/build install --record /home/ars/ros2-bot/src/build/model/install.log --single-version-externally-managed install_data
