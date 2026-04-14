@@ -1,0 +1,21 @@
+[0.488s] Invoking command in '/home/ars/ros2-bot/src/model': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ars/ros2-bot/build/model/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ars/ros2-bot/install/model/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/model build --build-base /home/ars/ros2-bot/build/model/build install --record /home/ars/ros2-bot/build/model/install.log --single-version-externally-managed install_data
+[0.618s] running egg_info
+[0.627s] writing ../../build/model/model.egg-info/PKG-INFO
+[0.627s] writing dependency_links to ../../build/model/model.egg-info/dependency_links.txt
+[0.627s] writing requirements to ../../build/model/model.egg-info/requires.txt
+[0.627s] writing top-level names to ../../build/model/model.egg-info/top_level.txt
+[0.645s] reading manifest file '../../build/model/model.egg-info/SOURCES.txt'
+[0.645s] adding license file 'LICENSE'
+[0.645s] writing manifest file '../../build/model/model.egg-info/SOURCES.txt'
+[0.645s] running build
+[0.645s] running build_py
+[0.645s] running install
+[0.649s] running install_lib
+[0.658s] running install_data
+[0.658s] copying worlds/maze.sdf -> /home/ars/ros2-bot/install/model/share/model/worlds
+[0.658s] running install_egg_info
+[0.667s] removing '/home/ars/ros2-bot/install/model/lib/python3.12/site-packages/model-0.0.0-py3.12.egg-info' (and everything under it)
+[0.667s] Copying ../../build/model/model.egg-info to /home/ars/ros2-bot/install/model/lib/python3.12/site-packages/model-0.0.0-py3.12.egg-info
+[0.668s] running install_scripts
+[0.735s] writing list of installed files to '/home/ars/ros2-bot/build/model/install.log'
+[0.749s] Invoked command in '/home/ars/ros2-bot/src/model' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ars/ros2-bot/build/model/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ars/ros2-bot/install/model/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/model build --build-base /home/ars/ros2-bot/build/model/build install --record /home/ars/ros2-bot/build/model/install.log --single-version-externally-managed install_data

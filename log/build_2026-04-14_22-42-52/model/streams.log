@@ -1,0 +1,27 @@
+[0.476s] Invoking command in '/home/ars/ros2-bot/src/model': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ars/ros2-bot/build/model/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ars/ros2-bot/install/model/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/model build --build-base /home/ars/ros2-bot/build/model/build install --record /home/ars/ros2-bot/build/model/install.log --single-version-externally-managed install_data
+[0.606s] running egg_info
+[0.615s] writing ../../build/model/model.egg-info/PKG-INFO
+[0.615s] writing dependency_links to ../../build/model/model.egg-info/dependency_links.txt
+[0.615s] writing entry points to ../../build/model/model.egg-info/entry_points.txt
+[0.615s] writing requirements to ../../build/model/model.egg-info/requires.txt
+[0.616s] writing top-level names to ../../build/model/model.egg-info/top_level.txt
+[0.634s] reading manifest file '../../build/model/model.egg-info/SOURCES.txt'
+[0.634s] adding license file 'LICENSE'
+[0.634s] writing manifest file '../../build/model/model.egg-info/SOURCES.txt'
+[0.634s] running build
+[0.634s] running build_py
+[0.635s] copying model/maze_solver.py -> /home/ars/ros2-bot/build/model/build/lib/model
+[0.635s] running install
+[0.638s] running install_lib
+[0.647s] copying /home/ars/ros2-bot/build/model/build/lib/model/maze_solver.py -> /home/ars/ros2-bot/install/model/lib/python3.12/site-packages/model
+[0.647s] byte-compiling /home/ars/ros2-bot/install/model/lib/python3.12/site-packages/model/maze_solver.py to maze_solver.cpython-312.pyc
+[0.648s] running install_data
+[0.648s] copying launch/gazebo.launch.py -> /home/ars/ros2-bot/install/model/share/model/launch
+[0.648s] copying worlds/maze.sdf -> /home/ars/ros2-bot/install/model/share/model/worlds
+[0.648s] running install_egg_info
+[0.658s] removing '/home/ars/ros2-bot/install/model/lib/python3.12/site-packages/model-0.0.0-py3.12.egg-info' (and everything under it)
+[0.658s] Copying ../../build/model/model.egg-info to /home/ars/ros2-bot/install/model/lib/python3.12/site-packages/model-0.0.0-py3.12.egg-info
+[0.659s] running install_scripts
+[0.727s] Installing maze_solver script to /home/ars/ros2-bot/install/model/lib/model
+[0.727s] writing list of installed files to '/home/ars/ros2-bot/build/model/install.log'
+[0.742s] Invoked command in '/home/ars/ros2-bot/src/model' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ars/ros2-bot/build/model/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ars/ros2-bot/install/model/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/model build --build-base /home/ars/ros2-bot/build/model/build install --record /home/ars/ros2-bot/build/model/install.log --single-version-externally-managed install_data

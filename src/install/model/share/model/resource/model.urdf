@@ -206,5 +206,61 @@
         <mu1>0.0</mu1>
         <mu2>0.0</mu2>
     </gazebo>
-    
+
+    <gazebo reference="base_link">
+        <visual>
+            <material>
+                <ambient>1 1 1 1</ambient>
+                <diffuse>1 1 1 1</diffuse>
+                <pbr>
+                    <metal>
+                        <albedo_map>model://model/worlds/textures/robottexture.png</albedo_map>
+                    </metal>
+                </pbr>
+            </material>
+        </visual>
+    </gazebo>
+
+    <gazebo reference="lidar">
+        <visual>
+            <material>
+                <ambient>1 1 1 1</ambient>
+                <diffuse>1 1 1 1</diffuse>
+                <pbr>
+                    <metal>
+                        <albedo_map>model://model/worlds/textures/lidartexture.png</albedo_map>
+                    </metal>
+                </pbr>
+            </material>
+        </visual>
+    </gazebo>
+
+    <gazebo reference="right_wheel">
+        <visual>
+            <material>
+                <ambient>1 1 1 1</ambient>
+                <diffuse>1 1 1 1</diffuse>
+                <pbr>
+                    <metal>
+                        <albedo_map>model://model/worlds/textures/lidartexture.png</albedo_map>
+                    </metal>
+                </pbr>
+            </material>
+        </visual>
+    </gazebo>
+
+    <gazebo reference="left_wheel">
+        <visual>
+            <material>
+                <ambient>1 1 1 1</ambient>
+                <diffuse>1 1 1 1</diffuse>
+                <pbr>
+                    <metal>
+                        <albedo_map>model://model/worlds/textures/lidartexture.png</albedo_map>
+                    </metal>
+                </pbr>
+            </material>
+        </visual>
+    </gazebo>
+
 </robot>

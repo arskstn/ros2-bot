@@ -1,0 +1,41 @@
+[0.421s] Invoking command in '/home/ars/ros2-bot/src/model': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ars/ros2-bot/build/model/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ars/ros2-bot/install/model/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/model build --build-base /home/ars/ros2-bot/build/model/build install --record /home/ars/ros2-bot/build/model/install.log --single-version-externally-managed install_data
+[0.556s] running egg_info
+[0.556s] creating ../../build/model/model.egg-info
+[0.566s] writing ../../build/model/model.egg-info/PKG-INFO
+[0.566s] writing dependency_links to ../../build/model/model.egg-info/dependency_links.txt
+[0.566s] writing requirements to ../../build/model/model.egg-info/requires.txt
+[0.566s] writing top-level names to ../../build/model/model.egg-info/top_level.txt
+[0.566s] writing manifest file '../../build/model/model.egg-info/SOURCES.txt'
+[0.586s] reading manifest file '../../build/model/model.egg-info/SOURCES.txt'
+[0.587s] adding license file 'LICENSE'
+[0.587s] writing manifest file '../../build/model/model.egg-info/SOURCES.txt'
+[0.587s] running build
+[0.587s] running build_py
+[0.587s] creating /home/ars/ros2-bot/build/model/build
+[0.587s] creating /home/ars/ros2-bot/build/model/build/lib
+[0.587s] creating /home/ars/ros2-bot/build/model/build/lib/model
+[0.587s] copying model/__init__.py -> /home/ars/ros2-bot/build/model/build/lib/model
+[0.587s] running install
+[0.591s] running install_lib
+[0.601s] creating /home/ars/ros2-bot/install/model/lib/python3.12/site-packages/model
+[0.601s] copying /home/ars/ros2-bot/build/model/build/lib/model/__init__.py -> /home/ars/ros2-bot/install/model/lib/python3.12/site-packages/model
+[0.602s] byte-compiling /home/ars/ros2-bot/install/model/lib/python3.12/site-packages/model/__init__.py to __init__.cpython-312.pyc
+[0.602s] running install_data
+[0.602s] creating /home/ars/ros2-bot/install/model/share/ament_index
+[0.602s] creating /home/ars/ros2-bot/install/model/share/ament_index/resource_index
+[0.602s] creating /home/ars/ros2-bot/install/model/share/ament_index/resource_index/packages
+[0.602s] copying resource/model -> /home/ars/ros2-bot/install/model/share/ament_index/resource_index/packages
+[0.602s] copying package.xml -> /home/ars/ros2-bot/install/model/share/model
+[0.602s] creating /home/ars/ros2-bot/install/model/share/model/launch
+[0.602s] copying launch/gazebo.launch.py -> /home/ars/ros2-bot/install/model/share/model/launch
+[0.602s] creating /home/ars/ros2-bot/install/model/share/model/resource
+[0.602s] copying resource/model.urdf -> /home/ars/ros2-bot/install/model/share/model/resource
+[0.602s] creating /home/ars/ros2-bot/install/model/share/model/worlds
+[0.602s] copying worlds/maze.sdf -> /home/ars/ros2-bot/install/model/share/model/worlds
+[0.602s] creating /home/ars/ros2-bot/install/model/share/model/worlds/textures
+[0.602s] copying worlds/textures/wall.jpeg -> /home/ars/ros2-bot/install/model/share/model/worlds/textures
+[0.602s] running install_egg_info
+[0.614s] Copying ../../build/model/model.egg-info to /home/ars/ros2-bot/install/model/lib/python3.12/site-packages/model-0.0.0-py3.12.egg-info
+[0.615s] running install_scripts
+[0.691s] writing list of installed files to '/home/ars/ros2-bot/build/model/install.log'
+[0.708s] Invoked command in '/home/ars/ros2-bot/src/model' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ars/ros2-bot/build/model/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ars/ros2-bot/install/model/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/model build --build-base /home/ars/ros2-bot/build/model/build install --record /home/ars/ros2-bot/build/model/install.log --single-version-externally-managed install_data

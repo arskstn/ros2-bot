@@ -13,7 +13,12 @@ setup(
         ('share/' + package_name + '/launch', ['launch/gazebo.launch.py']),
         ('share/' + package_name + '/resource', ['resource/model.urdf']),
         ('share/' + package_name + '/worlds', ['worlds/maze.sdf']),
-        ('share/' + package_name + '/worlds/textures', ['worlds/textures/wall.jpeg']),
+        ('share/' + package_name + '/worlds/textures', [
+            'worlds/textures/wall.jpeg',
+            'worlds/textures/robottexture.png',
+            'worlds/textures/lidartexture.png',
+            'worlds/textures/finishmodel.stl',
+        ]),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -28,6 +33,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'maze_solver = model.maze_solver:main',
         ],
     },
 )
