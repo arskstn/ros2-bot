@@ -10,15 +10,15 @@ from nav_msgs.msg import Odometry
 
 LINEAR_SPEED  = 0.3
 ANGULAR_SPEED = 0.5
-FRONT_THRESH  = 0.55  # расстояние до стены спереди при котором тормозим
-WALL_CLOSE    = 0.35  # слишком близко к левой стене
-WALL_FAR      = 1.0   # стена слева пропала (ширина коридора ~0.7м в центре)
-EXIT_DIST     = 2.5   # все стороны свободны — выход
-MIN_TRAVEL    = 6.0   # минимум метров пути до проверки выхода
+FRONT_THRESH  = 0.55
+WALL_CLOSE    = 0.35
+WALL_FAR      = 1.0
+EXIT_DIST     = 2.5
+MIN_TRAVEL    = 6.0
 
-SEARCHING     = 'searching'
-FOLLOWING     = 'following'
-TURNING_LEFT  = 'turning_left'
+SEARCHING    = 'searching'
+FOLLOWING    = 'following'
+TURNING_LEFT = 'turning_left'
 
 
 class MazeSolver(Node):
@@ -61,7 +61,6 @@ class MazeSolver(Node):
         left  = self.sector_min(msg,  90, 25)
         right = self.sector_min(msg, -90, 25)
 
-        # Выход: открытое пространство со всех сторон, только после MIN_TRAVEL
         if (self.travelled > MIN_TRAVEL
                 and front > EXIT_DIST
                 and left  > EXIT_DIST
@@ -75,13 +74,11 @@ class MazeSolver(Node):
         twist = Twist()
 
         if front < FRONT_THRESH:
-            # Стена впереди → поворот направо на месте, сброс состояния
             self.state         = SEARCHING
             twist.linear.x     = 0.0
             twist.angular.z    = -ANGULAR_SPEED
 
         elif self.state == TURNING_LEFT:
-            # Доворачиваем влево пока не найдём левую стену
             if left < WALL_FAR:
                 self.state = FOLLOWING
             else:
@@ -89,25 +86,20 @@ class MazeSolver(Node):
                 twist.angular.z = ANGULAR_SPEED
 
         elif left < WALL_FAR:
-            # Левая стена найдена → следуем вдоль
             self.state = FOLLOWING
             if left < WALL_CLOSE:
-                # Слишком близко → корректируем вправо
                 twist.linear.x  = LINEAR_SPEED * 0.5
                 twist.angular.z = -ANGULAR_SPEED * 0.4
             else:
-                # Хорошее расстояние → прямо
                 twist.linear.x  = LINEAR_SPEED
                 twist.angular.z = 0.0
 
         elif self.state == FOLLOWING:
-            # Следовали, стена пропала → поворот налево (угол коридора)
             self.state         = TURNING_LEFT
             twist.linear.x     = LINEAR_SPEED * 0.4
             twist.angular.z    = ANGULAR_SPEED
 
         else:
-            # SEARCHING: стен нет → едем прямо
             twist.linear.x  = LINEAR_SPEED
             twist.angular.z = 0.0
 

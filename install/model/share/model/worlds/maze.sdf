@@ -2,9 +2,10 @@
 <sdf version="1.8">
   <world name="maze_world">
 
-    <physics name="1ms" type="ignored">
+    <physics name="default_physics" type="ode">
       <max_step_size>0.001</max_step_size>
-      <real_time_factor>1.0</real_time_factor>
+      <real_time_factor>3.0</real_time_factor>
+      <real_time_update_rate>3000</real_time_update_rate>
     </physics>
 
     <plugin filename="gz-sim-physics-system"           name="gz::sim::systems::Physics"/>
@@ -218,12 +219,13 @@
     <model name="finish">
       <pose>0 -4.5 0.4 0 0 3.14159</pose>
       <link name="link">
+        <gravity>false</gravity>
         <inertial>
-          <mass>0.01</mass>
+          <mass>0.001</mass>
           <inertia>
-            <ixx>0.0001</ixx><ixy>0</ixy><ixz>0</ixz>
-            <iyy>0.0001</iyy><iyz>0</iyz>
-            <izz>0.0001</izz>
+            <ixx>0.00001</ixx><ixy>0</ixy><ixz>0</ixz>
+            <iyy>0.00001</iyy><iyz>0</iyz>
+            <izz>0.00001</izz>
           </inertia>
         </inertial>
         <collision name="c">
